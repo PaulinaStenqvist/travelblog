@@ -1,0 +1,34 @@
+.header {
+    margin-top: 60px;
+}
+
+.headerTitles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Merryweather', 'sans-serif';
+}
+
+.headerTitleLg {
+    position: absolute;
+    top: 78%;
+    font-size: 130px;
+    color: white;
+    font-family: 'Tangerine', 'sans-serif';
+    /* z-index: 1; */
+}
+.headerTitleSm {
+    position: absolute;
+    top: 90%;
+    font-size: 40px;
+    color: white;
+    font-family: 'Tangerine', 'sans-serif';
+    /* z-index: 1; */
+}
+
+.headerImg {
+    width: 100%;
+    height: 850px;
+    margin-top: 80px;
+    object-fit: cover;
+}

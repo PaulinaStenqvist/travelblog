@@ -1,0 +1,81 @@
+.write{
+    padding-top: 50px;
+}
+
+.writeImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 40px;
+    width: 70vw;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.textForm {
+    font-family: 'Merriweather', sans-serif;
+    position: relative;
+    top: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px;
+    border-color: silver;
+    border-radius: 10px;
+    cursor: pointer;
+    font-style: 16px;
+}
+
+.weriteFormGroup {
+    
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.writeIcon {
+    width: 25px;
+    height: 25px;
+    /* border-radius: 50%; */
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: silver;
+    cursor: pointer;
+}
+
+.writeInput {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 30px;
+    border: none;
+    padding: 20px;
+    width: 70vw;
+}
+
+.writeInput:foucus {
+    outline: none;
+}
+
+.writeText {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 20px;
+    height: 100vh;
+}
+
+.writeSubmit {
+    font-family: 'Merriweather', sans-serif;
+    position: relative;   
+    top: 20px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
