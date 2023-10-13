@@ -1,4 +1,4 @@
-import Home from "./pages/home/Home";
+import Home from "./pages/home/home";
 import Nav from "./components/nav/nav";
 import Singelpost from "./components/singelpost/singelpost";
 import Write from "./pages/write/write";
