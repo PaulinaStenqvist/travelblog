@@ -25,7 +25,7 @@
     cursor: pointer;
 }
 
-.settingsform {
+.settingsForm {
     display: flex;
     flex-direction: column;
 }
@@ -39,5 +39,46 @@
 .settingsProfileImg {
     width: 70px;
     height: 70px;
+    border-radius: 3px;
+    object-fit: cover;
 }
 
+.settingsIcon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 11px;
+    cursor: pointer;
+}
+
+.settingsForm > label {
+    flex: 20px;
+    margin-top: 20px;
+    font-family: 'Merriweather', 'sans-serif';
+}
+
+.settingsform > input {
+    font-family: 'Merriweather', 'sans-serif';
+    color: grey;
+    margin: 10px 0;
+    height: 30px;
+    border:none;
+}
+
+.settingsButton {
+    width: 150px;
+    align-self: center;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background-color: rgb(0, 110, 255);
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}

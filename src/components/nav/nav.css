@@ -10,25 +10,25 @@
     z-index: 999;
 }
 
-.topLeft,.topRight {
+.navLeft,.navRight {
     flex: 3;
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
-.topCenter {
+.navCenter {
     flex:6;
 }
 
-.topIcon {
+.navIcon {
     font-size: 20px;
     margin-right: 10px;
     color:rgb(65, 71, 69);
     cursor: pointer;
 }
 
-.topImage {
+.nacImage {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -52,7 +52,7 @@
 
 }
 
-.topSearchIcon {
+.navSearchIcon {
     font-size: 18px;
     color:rgb(65, 71, 69);
     cursor: pointer;
