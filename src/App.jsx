@@ -5,11 +5,12 @@ import Write from "./pages/write/write";
 import Settings from "./pages/settings/settings";
 import Login from "./pages/login/login";
 import Register from "./pages/register/register";
-import { Route, BrowserRouter as Router, Routes, Link } from "react-router-dom";
-
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { useContext } from "react";
+import { Context } from "./context/Context";
 
 function App() {
-  const user = false;
+  const { user } = useContext(Context);
   return (
 <Router>
   <Nav />
