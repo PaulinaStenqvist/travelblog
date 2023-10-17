@@ -5,6 +5,8 @@ import { Context } from "../../context/Context";
 import axios from "axios";
 import "./settings.css"
 
+
+export default function Settings() {
 const [file, setFile] = useState(null);
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -42,7 +44,7 @@ const [file, setFile] = useState(null);
     }
   };
 
-export default function Settings() {
+
   return (
     <div className="settings">
       <div className="settingsWrapper">

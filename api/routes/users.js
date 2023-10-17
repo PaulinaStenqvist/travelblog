@@ -1,10 +1,10 @@
 const router = require("express").Router();
-const User = require("../models/user");
+// const User = require("../models/User");
 const Post = require ("../models/post");
 const bcrypt = require('bcrypt');
 
 //UPDATE
-router.put("/:id", async (req, res) => {
+router.put("/update/:id", async (req, res) => {
     if (req.body.userId === req.params.id){
      if(req.body.password){
         const salt = await bcrypt.genSalt(10);
@@ -21,14 +21,12 @@ router.put("/:id", async (req, res) => {
     } catch(err) {
       res.status(500).json(err);
     }
-} else{
-  res.status(401).json("You can update only your accound!");
-}
+} 
 });
 
 
 //DELETE
-router.delete("/:id", async (req, res) => {
+router.delete("/delete/:id", async (req, res) => {
     if (req.body.userId === req.params.id) {
       try {
         const user = await User.findById(req.params.id);
@@ -48,7 +46,7 @@ router.delete("/:id", async (req, res) => {
   });
   
   //GET USER
-  router.get("/:id", async (req, res) => {
+  router.get("/getuser/:id", async (req, res) => {
     try {
       const user = await User.findById(req.params.id);
       const { password, ...others } = user._doc;

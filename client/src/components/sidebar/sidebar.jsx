@@ -6,13 +6,13 @@ import "./sidebar.css"
 export default function Sidebar() {
     const [cats, setCats] = useState([]);
 
-    useEffect(() => {
-        const getCats = async () => {
-          const res = await axios.get("/categories");
-          setCats(res.data);
-        };
-        getCats();
-      }, []);
+    // useEffect(() => {
+    //     const getCats = async () => {
+    //       const res = await axios.get("/categories/get");
+    //       setCats(res.data);
+    //     };
+    //     getCats();
+    //   }, []);
   return (
     <div className="sidebar">
         <div className="sidebarItem">

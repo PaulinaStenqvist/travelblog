@@ -4,7 +4,7 @@ import { useContext, useEffect, useState } from "react";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
-import "./singlePost.css"
+import "./singelpost.css"
 
 export default function SinglePost() {
   const location = useLocation();
