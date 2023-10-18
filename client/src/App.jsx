@@ -21,6 +21,7 @@ function App() {
   <Route path="/write" element={ user ? <Write /> : <Register />}/>
   <Route path="/settings" element={ user ? <Settings /> : <Register />} />
   <Route path="/post/:postId" element={<Singel />} />
+  
   </Routes>
 </Router>
     );

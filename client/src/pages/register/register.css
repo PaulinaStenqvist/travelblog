@@ -51,9 +51,9 @@
     right: 20px;
     margin-top: 20px;
     cursor: pointer;
-    background-color: blue;
+    color: silver;
+    background-color: rgb(141, 5, 28);
     border: none;
-    color: white;
     border-radius: 5px;
     padding: 10px;
 

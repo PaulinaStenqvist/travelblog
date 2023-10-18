@@ -1,23 +1,28 @@
 .write{
     padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .writeImg {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 40px;
-    width: 70vw;
+    width: 60vw;
     height: 350px;
-    border-radius: 10px;
+    border-radius: 5px;
     object-fit: cover;
+   
+
 }
 
 .textForm {
     font-family: 'Merriweather', sans-serif;
     position: relative;
     top: 20px;
-    color: white;
+    color: silver;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,11 +34,17 @@
     font-style: 16px;
 }
 
+.writeForm {
+    position: relative;
+    padding-left: 50px;
+}
+
 .weriteFormGroup {
     
     display: flex;
     align-content: center;
     justify-content: center;
+  
 }
 
 .writeIcon {
@@ -54,11 +65,12 @@
     font-size: 30px;
     border: none;
     padding: 20px;
-    width: 70vw;
+    width: 60vw;
 }
 
 .writeInput:foucus {
     outline: none;
+    
 }
 
 .writeText {
@@ -71,8 +83,8 @@
     font-family: 'Merriweather', sans-serif;
     position: relative;   
     top: 20px;
-    color: white;
-    background-color: black;
+    color: silver;
+    background-color: rgb(141, 5, 28);
     padding: 10px;
     border: none;
     border-radius: 10px;
