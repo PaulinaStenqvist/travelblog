@@ -19,10 +19,8 @@ export default function Sidebar() {
             <span className="sidebarTitle">OM MIG</span>
             <div className="sidebarImg">     
             </div>
-            <div className="sidbarText">
-           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, eum praesentium! Provident explicabo, aliquam dicta quod in odio soluta dignissimos.
+           <p className="sidbarText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, eum praesentium! Provident explicabo, aliquam dicta quod in odio soluta dignissimos.
            </p>
-           </div>
         </div>
        
         <div className="sidebarItem">

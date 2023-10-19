@@ -52,7 +52,7 @@ export default function Register() {
         Registrera
       </button>
     </form>
-    <button className="registerLoginButton">
+    <button className="loginRegisterButton">
       <Link className="link" to="/login">
         Logga In
       </Link>

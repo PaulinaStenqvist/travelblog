@@ -10,7 +10,8 @@
     z-index: 999;
 }
 
-.navLeft,.navRight {
+.navLeft,
+.navRight {
     flex: 3;
     display: flex;
     align-items: center;
@@ -28,7 +29,7 @@
     cursor: pointer;
 }
 
-.nacImage {
+.navImage {
     width: 40px;
     height: 40px;
     border-radius: 50%;

@@ -86,7 +86,7 @@ const [file, setFile] = useState(null);
             type="password"
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button className="settingsSubmit" type="submit">
+          <button className="settingsButton" type="submit">
             Spara
           </button>
           {success && (

@@ -34,9 +34,14 @@
   }
   
   .sidebarItem > p {
+    font-family: "Merriweather", sans-serif;
     padding: 30px;
   }
   
+  .sidebarText {
+    font-family: "Merriweather", sans-serif;
+  }
+
   .sidebarList {
     list-style: none;
     margin-bottom: 30px;

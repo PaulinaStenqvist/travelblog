@@ -1,58 +1,69 @@
-
 import "./nav.css"
 import bild from "../../images/bild.png";
 import { Link } from "react-router-dom";
+import { Context } from "../../context/Context";
+import { useContext } from "react";
 
 export default function Nav() {
-  const user = false; 
+  const {user, dispatch} = useContext(Context);
+  const PF = "http://localhost:5000/images/"
+  const handleLogout = () => {
+    dispatch({type: "LOGOUT" });
+  };
+
   return (
     <div className="head">
        <div className="navLeft">
        <i className="navIcon fa-brands fa-github"></i>
        <i className="navIcon fa-brands fa-instagram"></i></div>
-       <div className="navCenter">
+      <div className="navCenter">
         <ul className="navList">
           <li className="navListItem">
-            <Link className="link" to="/">HEM</Link>
+            <Link className="link" to="/">
+              HOME
+            </Link>
           </li>
           <li className="navListItem">
-            <Link className="link" to="/">OM</Link>
+            <Link className="link" to="/">
+              ABOUT
+            </Link>
           </li>
           <li className="navListItem">
-            <Link className="link" to="/">KONTAKT</Link>
+            <Link className="link" to="/">
+              CONTACT
+            </Link>
           </li>
           <li className="navListItem">
-            <Link className="link" to="/write">SKRIV</Link>
+            <Link className="link" to="/write">
+              WRITE
+            </Link>
           </li>
-          <li className="navListItem">{user && "LOGGA UT"}
+          <li className="navListItem" onClick={handleLogout}>
+            {user && "LOGOUT"}
           </li>
         </ul>
-       </div>
-       <div className="navRight">
-        {
-          user ? (
-            <img 
-            className="navImage"
-          src={bild} alt="profile picture"
-           />
-          ) : (
-            <ul className="navList">
-              <li className="navListItem"> 
-                <Link className="link" to="/login">
-                  LOGGA IN
-                </Link>
-              </li>
-              <li className="navListItem"> 
-                <Link className="link" to="/register">
-                  REGISTRERA
-                </Link>
-              </li>
-            </ul>
-          )}
-      
-        <i className="navSearchIcon fa-solid fa-magnifying-glass"></i>
-       
-       </div>
+      </div>
+      <div className="navRight">
+        {user ? (
+          <Link to="/settings">
+            <img className="navImage" src={PF+user.profilePic} alt="Profil Picture" />
+          </Link>
+        ) : (
+          <ul className="navList">
+            <li className="navListItem">
+              <Link className="link" to="/login">
+                LOGIN
+              </Link>
+            </li>
+            <li className="navListItem">
+              <Link className="link" to="/register">
+                REGISTER
+              </Link>
+            </li>
+          </ul>
+        )}
+        <i className="navSearchIcon fas fa-search"></i>
+      </div>
     </div>
-  )
+  );
 }
