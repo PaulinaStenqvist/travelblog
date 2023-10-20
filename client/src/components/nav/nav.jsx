@@ -14,32 +14,31 @@ export default function Nav() {
   return (
     <div className="head">
        <div className="navLeft">
-       <i className="navIcon fa-brands fa-github"></i>
        <i className="navIcon fa-brands fa-instagram"></i></div>
       <div className="navCenter">
         <ul className="navList">
           <li className="navListItem">
             <Link className="link" to="/">
-              HOME
+              HEM
             </Link>
           </li>
           <li className="navListItem">
             <Link className="link" to="/">
-              ABOUT
+              OM
             </Link>
           </li>
           <li className="navListItem">
             <Link className="link" to="/">
-              CONTACT
+              KONTAKT
             </Link>
           </li>
           <li className="navListItem">
             <Link className="link" to="/write">
-              WRITE
+              SKRIV
             </Link>
           </li>
           <li className="navListItem" onClick={handleLogout}>
-            {user && "LOGOUT"}
+            {user && "LOGGA UT"}
           </li>
         </ul>
       </div>
@@ -52,12 +51,12 @@ export default function Nav() {
           <ul className="navList">
             <li className="navListItem">
               <Link className="link" to="/login">
-                LOGIN
+                LOGGA IN
               </Link>
             </li>
             <li className="navListItem">
               <Link className="link" to="/register">
-                REGISTER
+                REGRISTRERA
               </Link>
             </li>
           </ul>

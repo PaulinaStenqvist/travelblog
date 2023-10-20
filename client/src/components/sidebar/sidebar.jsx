@@ -16,7 +16,7 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
         <div className="sidebarItem">
-            <span className="sidebarTitle">OM MIG</span>
+            <span className="sidebarTitle">OM OSS</span>
             <div className="sidebarImg">     
             </div>
            <p className="sidbarText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, eum praesentium! Provident explicabo, aliquam dicta quod in odio soluta dignissimos.
